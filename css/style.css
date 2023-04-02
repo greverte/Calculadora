@@ -1,0 +1,470 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr minmax(300px, 800px) 1fr
+}
+
+header {
+  grid-column: 1/4;
+  background-color: #fff;
+
+}
+
+.opcoes li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  padding: 5px 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  font: monospace;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  display: inline-block;
+}
+
+.menu {
+  margin-top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+
+.menu li {
+  display: inline;
+  position: relative;
+
+}
+
+.menu ul {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  position: relative;
+}
+
+h1 {
+  grid-column: 2/3;
+  text-align: center;
+  font-size: 35px;
+  font: monospace;
+  text-transform: uppercase;
+}
+
+.form {
+  grid-column: 2/3;
+  position: relative;
+  background-color: #ffffff;
+  border: 2px solid black;
+  width: 100%;
+  height: 950px;
+}
+
+
+.info-sexo {
+  font-size: 20px;
+  width: 200px;
+  position: relative;
+  top: 40px;
+  left: 400px;
+}
+
+.info-sexo input {
+  position: relative;
+  display: inline;
+  width: 20px;
+  height: 20px;
+  top: 4px;
+  cursor: pointer;
+}
+
+.info-sexo p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px
+}
+
+.masculino {
+  margin-bottom: 10px;
+
+}
+
+.info-03 {
+  position: relative;
+  top: 320px;
+  left: 100px;
+}
+
+.info-03 p {
+  font-size: 13px;
+  position: relative;
+  left: 30px;
+  bottom: 30px;
+}
+
+.info-03 h3 {
+  font-size: 20px;
+  font-weight: normal
+}
+
+.info-03 input {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.info-03 label {
+  position: relative;
+  bottom: 15px;
+  right: 5px;
+}
+
+button {
+  width: 130px;
+  height: 30px;
+  top: 250px;
+  left: 350px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.resultado {
+  position: relative;
+  width: 100px;
+  height: 40px;
+  top: 250px;
+  left: -300px;
+}
+
+.kcaldia {
+  display: none;
+}
+
+.resultado h1 {
+  font-size: 50px;
+  position: relative;
+}
+
+.mostrar h1 {
+  position: relative;
+  bottom: 30px;
+  right: 65px;
+}
+
+.mostrar {
+  position: relative;
+  bottom: 30px;
+  right: 65px;
+}
+
+.escolha-formula {
+  font-size: 20px;
+  width: 200px;
+  position: relative;
+  bottom: 700px;
+  left: 400px;
+}
+
+.escolha-formula select#formula {
+  width: 158px;
+  height: 36px;
+  position: relative;
+  bottom: 75px;
+  left: 5px;
+}
+
+.escolha-formula label {
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  bottom: 80px;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  grid-column: 2/3;
+}
+
+.div-gordura {
+  position: relative;
+  left: 200px;
+  top: -20px;
+
+}
+
+#resultado-gordura {
+  position: relative;
+  right: 130px;
+  top: 65px;
+}
+
+#resultado-mlg {
+  position: relative;
+  right: 130px;
+}
+
+.div-gordura {
+  display: none;
+}
+
+.mostrar-2 {
+  position: relative;
+  left: 400px;
+  bottom: 500px;
+  width: 330px;
+}
+
+#kg-mlg {
+  position: relative;
+  bottom: 64px;
+  right: 35px;
+}
+
+.botao {
+  width: 130px;
+  height: 30px;
+  margin-top: 500px;
+  margin-left: 350px;
+}
+
+.form-dieta {
+  display: grid;
+  width: 30%;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-right: 0px;
+  position: absolute;
+
+}
+
+.form-dieta label {
+  position: relative;
+  font-size: 20px;
+  height: 30px;
+  margin-bottom: 5px;
+
+
+}
+
+.form-dieta input {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  bottom: 10px;
+  margin-bottom: 12px;
+
+}
+
+.form-basal {
+  display: grid;
+  width: 30%;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-right: 0px;
+  position: absolute;
+
+}
+
+.form-basal label {
+  position: relative;
+  font-size: 20px;
+  height: 30px;
+  margin-bottom: 5px;
+
+
+}
+
+.form-basal input {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  bottom: 10px;
+  margin-bottom: 12px;
+
+}
+
+.form-gordura {
+  display: grid;
+  width: 30%;
+  height: 150px;
+  margin-left: 100px;
+  margin-top: 40px;
+  margin-right: 0px;
+  position: absolute;
+
+}
+
+.form-gordura label {
+  position: relative;
+  font-size: 20px;
+  height: 30px;
+  margin-bottom: 5px;
+
+
+}
+
+.form-gordura input {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  bottom: 10px;
+  margin-bottom: 12px;
+
+}
+
+.escolha-objetivo {
+  font-size: 20px;
+  width: 200px;
+  position: relative;
+  margin-left: 100px;
+  top: 210px;
+
+}
+
+.escolha-objetivo select#objetivo {
+  width: 158px;
+  height: 36px;
+  position: relative;
+
+}
+
+.escolha-objetivo label {
+  position: relative;
+  bottom: 3px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+
+.escolha-estado {
+  position: relative;
+  top: 210px;
+  left: 100px;
+  display: grid;
+  width: 200px;
+  height: 200px;
+}
+
+.escolha-estado h3 {
+  font-size: 20px;
+  font-weight: normal
+}
+
+.escolha-estado input {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  bottom: 22px;
+  cursor: pointer;
+  right: 5px;
+}
+
+.escolha-estado label {
+  position: relative;
+  left: 25px;
+}
+
+.bloco-1 {
+  width: 150px;
+  height: 32px;
+  border: 1px solid #767676;
+  padding: 1px 2px;
+  position: relative;
+  bottom: 1px;
+  margin-bottom: -2px;
+
+}
+
+.bloco-2 {
+  width: 150px;
+  height: 32px;
+  border: 1px solid #767676;
+  padding: 1px 2px;
+  position: relative;
+  bottom: 1px;
+  margin-bottom: -1px;
+}
+
+.bloco-3 {
+  width: 150px;
+  height: 32px;
+  border: 1px solid #767676;
+  padding: 1px 2px;
+}
+
+.recomendacao {
+  display: grid;
+  width: 30%;
+  height: 150px;
+  margin-top: 40px;
+  margin-right: 0px;
+  float: right;
+  position: relative;
+  bottom: 562px;
+}
+
+.recomendacao p {
+  font-size: 20px;
+  padding: 0px;
+  margin-bottom: 3px;
+  margin-top: 23px;
+}
+
+.resultados {
+  width: 200px;
+  height: 250px;
+  float: right;
+  position: relative;
+
+  bottom: 507px;
+  left: 180px;
+
+}
+
+.botao1 {
+  margin-left: 350px;
+  margin-top: 340px;
+}
+
+.resultados h1 {
+  padding: 10px;
+}
+
+.botao2 {
+  margin-top: 250px;
+  margin-left: 350px;
+}
+
+.resultados p {
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  bottom: 40px;
+  left: 100px;
+
+}
+
+.total {
+  width: 250px;
+  height: 50px;
+  position: relative;
+  bottom: 220px;
+  left: 510px;
+
+}
+
+.total h1 {
+  text-align: center;
+  align-items: center;
+}

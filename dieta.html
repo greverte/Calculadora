@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Dieta</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="logo"><img src="./imgs/frango.png" alt=""></div>
+      <div class="opcoes">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gordura.html">Calc.Gordura</a> </li>
+            <li><a href="basal.html">Calc.Basal</a></li>
+            <li><a href="dieta.html">Dieta</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <h1>Divisão MacroNutrientes</h1>
+  <div class="form">
+    <form id="form-id">
+      <div class="form-dieta">
+        <label for="bf">Peso</label>
+        <input type="text" name="peso" id="peso" value="" placeholder="KG">
+        <label for="bf">Basal Diário</label>
+        <input type="text" name="basal-diario" id="basal-diario" value="" placeholder="KCAL">
+      </div>
+
+      <div class="escolha-objetivo">
+        <label for="objetivo">Objetivo</label>
+        <select name="objetivo" id="objetivo">
+          <option value="emagrecer">Emagrecer</option>
+          <option value="emagrecer-agressivo">Emagrecer "agressivo"</option>
+          <option value="manter">Manter</option>
+          <option value="ganho-seco">Ganho "seco"</option>
+          <option value="ganho-expressivo">Ganho "agressivo"</option>
+        </select>
+      </div>
+      <div class="escolha-estado">
+        <h3>Estado atual</h3>
+        <label for="magrelo">Magrelo(a)</label>
+        <input type="radio" id="magrelo" value="magrelo" name="estado">
+        <label for="atletico">Atlético(a)</label>
+        <input type="radio" id="atletico" value="atletico" name="estado">
+        <label for="falso">Falso(a) magro(a)</label>
+        <input type="radio" id="falso" value="falso" name="estado">
+        <label for="acima">Acima do peso</label>
+        <input type="radio" id="acima" value="acima" name="estado">
+      </div>
+
+
+      <button class="botao2" onclick="enviar3()">Calcular </button>
+
+
+
+    </form>
+    <div class="recomendacao">
+      <p>Proteina</p>
+      <div class="bloco-1"></div>
+      <p>Gordura</p>
+      <div class="bloco-2"></div>
+      <p>Carboidrato</p>
+      <div class="bloco-3"></div>
+    </div>
+    <div class="resultados">
+      <h1 id="resultado-prot"></h1>
+      <h1 id="resultado-fat"></h1>
+      <h1 id="resultado-carb"></h1>
+    </div>
+    <div class="total">
+      <h1 id="totaltd"></h1>
+
+    </div>
+  </div>
+
+
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

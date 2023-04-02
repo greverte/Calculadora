@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Gordura</title>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div class="logo"><img src="./imgs/frango.png" alt=""></div>
+      <div class="opcoes">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gordura.html">Calc.Gordura</a> </li>
+            <li><a href="basal.html">Calc.Basal</a></li>
+            <li><a href="dieta.html">Dieta</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <h1>Gordura Corporal e Massa</h1>
+  <div class="form">
+    <form id="form-id">
+      <div class="form-gordura">
+        <label for="altura">Altura</label>
+        <input type="text" id="altura" name="altura" value="" placeholder="CM">
+        <label for="altura">Pescoço</label>
+        <input type="text" id="pescoco" name="pescoco" value="" placeholder="CM">
+        <label for="altura">Cintura</label>
+        <input type="text" id="cintura" name="cintura" value="" placeholder="CM">
+        <label for="altura">Quadril</label>
+        <input type="text" id="quadril" name="quadril" value="" placeholder="CM">
+        <label for="altura">Peso</label>
+        <input type="text" id="peso" name="peso" value="" placeholder="KG">
+      </div>
+
+      <div class="info-sexo">
+        <p>Sexo</p>
+        <div class="masculino">
+          <input type="radio" id="masculino" name="sexo" value="masculino">
+          <label for="masculino">Masculino</label>
+        </div>
+        <div class="feminino">
+          <input type="radio" id="feminino" name="sexo" value="feminino">
+          <label for="feminino">Feminino</label>
+        </div>
+      </div>
+      <div class="botao">
+        <button onclick="enviar2()">Calcular</button>
+      </div>
+      <div class="div-gordura">
+        <h1 id="resultado-gordura"></h1>
+        <h1>% GORDURA</h1>
+        <h1 id="resultado-mlg"></h1>
+        <h1 id="kg-mlg">KG MLG</h1>
+      </div>
+    </form>
+
+
+
+
+  </div>
+  <div class="footer">
+
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
