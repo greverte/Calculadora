@@ -6,6 +6,7 @@ body {
   grid-template-columns: 1fr minmax(300px, 800px) 1fr
 }
 
+
 header {
   grid-column: 1/4;
   background-color: #fff;
@@ -168,7 +169,7 @@ button {
   font-size: 20px;
   width: 200px;
   position: relative;
-  bottom: 700px;
+  bottom: 620px;
   left: 400px;
 }
 
@@ -222,6 +223,7 @@ button {
   bottom: 500px;
   width: 330px;
 }
+
 
 #kg-mlg {
   position: relative;

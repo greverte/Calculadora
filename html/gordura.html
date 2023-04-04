@@ -5,18 +5,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
   <title>Gordura</title>
 </head>
 
 <body>
   <header>
     <div class="menu">
-      <div class="logo"><img src="./imgs/frango.png" alt=""></div>
+      <div class="logo"><img src="../imgs/frango.png" alt=""></div>
       <div class="opcoes">
         <nav>
           <ul>
-            <li><a href="index.html">Home</a></li>
             <li><a href="gordura.html">Calc.Gordura</a> </li>
             <li><a href="basal.html">Calc.Basal</a></li>
             <li><a href="dieta.html">Dieta</a> </li>
@@ -30,30 +29,30 @@
     <form id="form-id">
       <div class="form-gordura">
         <label for="altura">Altura</label>
-        <input type="text" id="altura" name="altura" value="" placeholder="CM">
+        <input type="text" id="altura" name="altura" value="" placeholder="CM" required>
         <label for="altura">Pescoço</label>
-        <input type="text" id="pescoco" name="pescoco" value="" placeholder="CM">
+        <input type="text" id="pescoco" name="pescoco" value="" placeholder="CM" required>
         <label for="altura">Cintura</label>
-        <input type="text" id="cintura" name="cintura" value="" placeholder="CM">
+        <input type="text" id="cintura" name="cintura" value="" placeholder="CM" required>
         <label for="altura">Quadril</label>
-        <input type="text" id="quadril" name="quadril" value="" placeholder="CM">
+        <input type="text" id="quadril" name="quadril" value="" placeholder="CM" required>
         <label for="altura">Peso</label>
-        <input type="text" id="peso" name="peso" value="" placeholder="KG">
+        <input type="text" id="peso" name="peso" value="" placeholder="KG" required>
       </div>
 
       <div class="info-sexo">
         <p>Sexo</p>
         <div class="masculino">
-          <input type="radio" id="masculino" name="sexo" value="masculino">
+          <input type="radio" id="masculino" name="sexo" value="masculino" required>
           <label for="masculino">Masculino</label>
         </div>
         <div class="feminino">
-          <input type="radio" id="feminino" name="sexo" value="feminino">
+          <input type="radio" id="feminino" name="sexo" value="feminino" required>
           <label for="feminino">Feminino</label>
         </div>
       </div>
       <div class="botao">
-        <button onclick="enviar2()">Calcular</button>
+        <button onclick="enviarGord()">Calcular</button>
       </div>
       <div class="div-gordura">
         <h1 id="resultado-gordura"></h1>
@@ -72,7 +71,7 @@
 
   </div>
 
-  <script src="js/script.js"></script>
+  <script src="../script.js"></script>
 </body>
 
 </html>
